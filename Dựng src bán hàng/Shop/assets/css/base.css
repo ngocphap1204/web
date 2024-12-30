@@ -1,7 +1,7 @@
 :root {
-    --white-coler: #fff;
-    --black-coler: #000;
-    --text-coler: #333;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
 }
 
 * {
@@ -24,4 +24,13 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+/* animation */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

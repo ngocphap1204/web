@@ -17,7 +17,7 @@
     position: relative;
     min-height: 26px;
 }
-.header:hover .header__qr{
+.header__navbar-item--has-qr:hover .header__qr{
     display: block;
 }
 
@@ -26,7 +26,7 @@
 {
     display: inline-block;
     font-size: 1.5rem;
-    color: var(--white-coler);
+    color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
 }
@@ -58,7 +58,7 @@ align-items: center;
 }
 
 .header__navbar-icon-link{
-    color: var(--white-coler);
+    color: var(--white-color);
     text-decoration: none;
 }
 .header__navbar-icon{
@@ -67,18 +67,19 @@ align-items: center;
 }
 .header__navbar-title--no-pointer{
     cursor: text;
-    color: var(--white-coler);
+    color: var(--white-color);
 }
 /* Header QR code */
 .header__qr {
     width: 186px;
-    background-color: var(--white-coler);
+    background-color: var(--white-color);
     position: absolute;
     left: 0;
     top: 100%;
     padding: 8%;
     border-radius: 2px;
     display: none;
+    animation: fadeIn ease-in 0.3s;
 }
 .header__qr::before
 {
@@ -89,6 +90,7 @@ align-items: center;
     height: 20px;
     content:"";
     display: block;
+    
 }
 .header__qr-img{
     width: 100%;
@@ -103,9 +105,60 @@ justify-content: space-between;
 }
 .header__qr-link:nth-child(2)
 {
-    margin-left: 11px;
+    margin-right: 11px;
 }
 .header__qr-download-img{
 height: 16px;
 }
-/* animation */
+
+/* header notification */
+.header__notify{
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+}
+.header__notify-header{
+    height: 40px;
+    background-color: var(--white-color);
+}
+.header__notify-header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+.header__notify-list{
+    padding-left: 0;
+}
+.header__notify-item{
+    display: flex;
+}
+.header__notify-link{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgba(238, 75, 43, 0.08);
+}
+.header__notify-img{
+    width: 48px;
+    object-fit: contain;
+}
+.header__notify-info{
+    margin-left: 12px;
+}
+.header__notify-name{
+    display: block;
+    font-size: 14px;
+    color: var(--black-color);
+}
+.header__notify-descriotion{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #756f6e;
+}
