@@ -5,46 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="login-form">
             <div class="login-form-content">
-                <h1 class="login-form-section title">Create an account</h1>
+                <h1 class="login-form-section-title">Create an account</h1>
                             <!-- Full name -->
                 <div class="form-input">
-                    <input
+                    <label for="fullname">
+                      <span>Full name</span>
+                      <input
                       type="text" id="fullname"
                       name="fullname"
                       placeholder="Ex: Ngoc Phap,..."
-                    />
-                    <label for="fullname">Full name</label>
+                      />
+                    </label>
                   </div>
                             <!-- Email -->
-                  <div class="form-input">
-                    <input
+                  <div class="form-input">                   
+                    <label for="email">
+                      <span>Email</span>
+                      <input
                       id="email" type="email" 
                       name="email"
                       placeholder="example.email@gmail.com"
-                    />
-                    <label for="email">Email</label>
+                      />
+                    </label>
                   </div>
                             <!-- Password -->
                   <div class="form-input">
-                    <input
+                    <label for="password">
+                      <span>Password</span>
+                      <input
                       type="password"
                       id="password"
                       name="password"
                       placeholder="Enter at least 8+ characters"
-                    />
-                    <label for="password">Password</label>
+                      />
+                    </label>
                     <img
                       id="password-img"
                       src="icon/phosphor-right-icon-eye.svg"
                       alt=""
                     />
                   </div>
+                  <input type="submit" value="Sign in" />
+                  
+                  <div class="form-section">
+                    <p>Or sign in with</p>
+                  </div>
+                  <div class="section-icon">
+                    <a href="mailto:someone@example.com">
+                      <i class="fa-solid fa-g brown bg-brown"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fa-brands fa-facebook blue bg-blue"></i>
+                    </a>
+                    <a href="tel:+0123456789">
+                      <i class="fa-brands fa-apple gray bg-gray"></i>
+                    </a>
+                  </div>
             </div>
+            
             
                  <!-- img -->
             <div class="login-form-image">
